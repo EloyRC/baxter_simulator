@@ -38,6 +38,8 @@
  * Desc:   Customized the default gazebo_ros_control_plugin.cpp
  */
 
+#include <ros/package.h>
+
 // Overload the default plugin
 #include <gazebo_ros_control/gazebo_ros_control_plugin.h>
 
@@ -49,6 +51,29 @@
 #include <baxter_core_msgs/AssemblyState.h>
 #include <baxter_core_msgs/HeadPanCommand.h>
 #include <baxter_core_msgs/EndEffectorCommand.h>
+
+// run shell command
+#include <iostream>
+#include <stdexcept>
+#include <stdio.h>
+#include <string>
+
+std::string exec_cmd(const char* cmd) {
+    char buffer[128];
+    std::string result = "";
+    FILE* pipe = popen(cmd, "r");
+    if (!pipe) throw std::runtime_error("popen() failed!");
+    try {
+        while (fgets(buffer, sizeof buffer, pipe) != NULL) {
+            result += buffer;
+        }
+    } catch (...) {
+        pclose(pipe);
+        throw;
+    }
+    pclose(pipe);
+    return result;
+}
 
 namespace baxter_gazebo_plugin
 {
@@ -79,6 +104,33 @@ private:
 public:
   void Load(gazebo::physics::ModelPtr parent, sdf::ElementPtr sdf)
   {
+    // Add robot description to param server
+  if(sdf->HasElement("robotNamespace"))
+  {
+    robot_namespace_ = sdf->GetElement("robotNamespace")->Get<std::string>();
+  }
+  else
+  {
+    robot_namespace_ = parent->GetName(); // default
+  }
+
+  if (sdf->HasElement("robotParam"))
+  {
+    robot_description_ = sdf->GetElement("robotParam")->Get<std::string>();
+  }
+  else
+  {
+    robot_description_ = "robot_description"; // default
+  }
+
+std::string b_path = ros::package::getPath("baxter_gazebo");
+std::string x_path = ros::package::getPath("xacro");
+std::string x_command = "python "+x_path+"/xacro.py --inorder "+b_path+"/urdf/baxter.urdf.xacro gazebo:=true left_electric_gripper:=false right_electric_gripper:=false";
+std::string urdf_string = exec_cmd(x_command.c_str());
+
+  ros::NodeHandle nh_ = ros::NodeHandle(robot_namespace_);
+  nh_.setParam(robot_description_, urdf_string);
+
     // Load parent class first
     GazeboRosControlPlugin::Load(parent, sdf);
 
