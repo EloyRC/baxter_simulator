@@ -26,9 +26,11 @@ This is a modified version of the baxter simulator by rethink robotics (http://s
 
 ![nrp_new_experiment](http://drive.google.com/uc?export=view&id=1yO2L7_qmhhKzd8jCXT_RLe4PXnTxhp96) 
 
-- start the simulation and load the robot controllers:
+- load the robot controllers (before starting the simulation in NRP!):
 
 		roslaunch baxter_gazebo baxter_control.launch
+		
+- add a brain and Transfer Functions to the experiment
 
 [1] [https://neurorobotics.net](https://neurorobotics.net) 
 [2] [https://www.humanbrainproject.eu](https://www.humanbrainproject.eu) 
