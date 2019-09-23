@@ -128,7 +128,7 @@ std::string x_path = ros::package::getPath("xacro");
 std::string x_command = "python "+x_path+"/xacro.py --inorder "+b_path+"/urdf/baxter.urdf.xacro gazebo:=true left_electric_gripper:=false right_electric_gripper:=false";
 std::string urdf_string = exec_cmd(x_command.c_str());
 
-  ros::NodeHandle nh_ = ros::NodeHandle(robot_namespace_);
+  ros::NodeHandle nh_ = ros::NodeHandle();
   nh_.setParam(robot_description_, urdf_string);
 
     // Load parent class first
