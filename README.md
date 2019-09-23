@@ -16,15 +16,15 @@ This is a modified version of the baxter simulator by rethink robotics (http://s
 
 #### Create an experiment with a Baxter robot
 
-- download the baxter robot model from [here](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/baxter_robot.zip) 
+- download the baxter robot model from [here](baxter_gazebo/media/baxter_robot.zip) 
 - start a new experiment in NRP:
 
-![nrp_new_experiment](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/nrp_new_experiment.png) 
+![nrp_new_experiment](baxter_gazebo/media/nrp_new_experiment.png) 
 
 - open the object library from the left pannel of NRP the front end
 - upload the baxter robot model zip file. Afterwards baxter will appear in the robots object group and it will possible to clone it:
 
-![nrp_new_experiment](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/nrp_clone_baxter.png) 
+![nrp_new_experiment](baxter_gazebo/media/nrp_clone_baxter.png) 
 
 - load the robot controllers (before starting the simulation in NRP!):
 
