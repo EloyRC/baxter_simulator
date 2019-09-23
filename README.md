@@ -9,22 +9,22 @@ baxter_simulator integration in NRP
 This is a modified version of the baxter simulator by rethink robotics (http://sdk.rethinkrobotics.com/wiki/Baxter_Simulator) adapted to be integrated in the NRP (Neurorobotics Platform [1] ) developped in the context of the Human Brain Project [2]. 
 
 
-#### Integration in a local NRP installation [3]
+#### Integration of baxter_simulator in a local NRP installation [3]
 
-- clone this repository in the folder *$HBP/GazeboRosPackages/src*
-- re-build the catking workspace by running *catkin_make* in *$HBP/GazeboRosPackages*
+- clone this repository in the folder *$HBP/GazeboRosPackages/src* of your local installation
+- build the catkin workspace by running *catkin_make* in *$HBP/GazeboRosPackages*
 
-#### Add a Baxter robot to an NRP experiment
+#### Create an experiment with a Baxter robot
 
-- download the baxter robot model from [here](https://drive.google.com/file/d/1VT-mZ_9cbPSzLKrRIR2Enh2iO-NfAVyv/view?usp=sharing) 
+- download the baxter robot model from [here](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/baxter_robot.zip) 
 - start a new experiment in NRP:
 
-![nrp_new_experiment](http://drive.google.com/uc?export=view&id=1bdfY7I1vk-h9XgOWGBkN7AQVqRb5Uv-B) 
+![nrp_new_experiment](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/nrp_new_experiment.png) 
 
 - open the object library from the left pannel of NRP the front end
 - upload the baxter robot model zip file. Afterwards baxter will appear in the robots object group and it will possible to clone it:
 
-![nrp_new_experiment](http://drive.google.com/uc?export=view&id=1yO2L7_qmhhKzd8jCXT_RLe4PXnTxhp96) 
+![nrp_new_experiment](https://raw.githubusercontent.com/EloyRC/baxter_simulator/master/baxter_simulator/baxter_gazebo/media/nrp_clone_baxter.png) 
 
 - load the robot controllers (before starting the simulation in NRP!):
 
