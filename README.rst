@@ -3,74 +3,37 @@ baxter_simulator
 
 Gazebo simulation with emulated interfaces for the Baxter Research Robot
 
-Code & Tickets
---------------
-
-+-----------------+----------------------------------------------------------------+
-| Documentation   | http://sdk.rethinkrobotics.com/wiki                            |
-+-----------------+----------------------------------------------------------------+
-| Issues          | https://github.com/RethinkRobotics/baxter_simulator/issues     |
-+-----------------+----------------------------------------------------------------+
-| Contributions   | http://sdk.rethinkrobotics.com/wiki/Contributions              |
-+-----------------+----------------------------------------------------------------+
-
-baxter_simulator Repository Overview
+baxter_simulator integration in NRP 
 ------------------------------------
 
-::
-
-     .
-     |
-     +-- baxter_simulator/        baxter_simulator metapackage
-     |
-     +-- baxter_gazebo/           Gazebo interface for the Baxter that loads the models into simulation
-     |   +-- src/
-     |   +-- launch/
-     |   +-- worlds/
-     |
-     +-- baxter_sim_controllers/  Controller plugins for Baxter
-     |   +-- src/
-     |   +-- include/
-     |   +-- config/
-     |
-     +-- baxter_sim_examples/     Examples specific to Baxter in Simulation
-     |   +-- scripts/             (use baxter_examples for examples that will work both in
-     |   +-- include/              simulation AND the real Baxter robot)
-     |   +-- launch/
-     |   +-- models/
-     |
-     +-- baxter_sim_hardware/     This emulates the hardware interfaces of Baxter 
-     |   +-- src/
-     |   +-- include/
-     |   +-- config/
-     |   +-- launch/
-     |
-     +-- baxter_sim_io/           QT based navigator plugins for baxter
-     |   +-- src/
-     |   +-- include/
-     |   +-- ui/
-     |
-     +-- baxter_sim_kinematics/     Implementation of IK, FK and gravity compensation for baxter 
-     |   +-- src/
-     |   +-- include/
-     |   +-- launch/
+This is a modified version of the baxter simulator by rethink robotics (http://sdk.rethinkrobotics.com/wiki/Baxter_Simulator) adapted to be integrated in the NRP (Neurorobotics Platform [1] ) developped in the context of the Human Brain Project [2]. 
 
 
+#### Integration in a local NRP installation [3]
 
-Other Baxter Repositories
--------------------------
+- clone this repository in the folder *$HBP/GazeboRosPackages/src*
+- re-build the catking workspace by running *catkin_make* in *$HBP/GazeboRosPackages*
 
-+------------------+-----------------------------------------------------+
-| baxter           | https://github.com/RethinkRobotics/baxter           |
-+------------------+-----------------------------------------------------+
-| baxter_interface | https://github.com/RethinkRobotics/baxter_interface |
-+------------------+-----------------------------------------------------+
-| baxter_tools     | https://github.com/RethinkRobotics/baxter_tools     |
-+------------------+-----------------------------------------------------+
-| baxter_examples  | https://github.com/RethinkRobotics/baxter_examples  |
-+------------------+-----------------------------------------------------+
-| baxter_common    | https://github.com/RethinkRobotics/baxter_common    |
-+------------------+-----------------------------------------------------+
+#### Add a Baxter robot to an NRP experiment
+
+- download the baxter robot model from [here](https://drive.google.com/file/d/1VT-mZ_9cbPSzLKrRIR2Enh2iO-NfAVyv/view?usp=sharing) 
+- start a new experiment in NRP:
+
+![nrp_new_experiment](http://drive.google.com/uc?export=view&id=1bdfY7I1vk-h9XgOWGBkN7AQVqRb5Uv-B) 
+
+- open the object library from the left pannel of NRP the front end
+- upload the baxter robot model zip file. Afterwards baxter will appear in the robots object group and it will possible to clone it:
+
+![nrp_new_experiment](http://drive.google.com/uc?export=view&id=1yO2L7_qmhhKzd8jCXT_RLe4PXnTxhp96) 
+
+- start the simulation and load the robot controllers:
+
+		roslaunch baxter_gazebo baxter_control.launch
+
+[1] [https://neurorobotics.net](https://neurorobotics.net) 
+[2] [https://www.humanbrainproject.eu](https://www.humanbrainproject.eu) 
+[3] [https://bitbucket.org/hbpneurorobotics/neurorobotics-platform/src/master](https://bitbucket.org/hbpneurorobotics/neurorobotics-platform/src/master) 
+
 
 Latest Release Information
 --------------------------
