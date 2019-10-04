@@ -12,6 +12,10 @@ This is a modified version of the baxter simulator by rethink robotics (http://s
 #### Integration of baxter_simulator in a local NRP installation [3]
 
 - clone this repository in the folder *$HBP/GazeboRosPackages/src* of your local installation
+- install additional dependencies:
+
+		sudo apt install ros-kinetic-joint-state-controller ros-kinetic-effort-controllers
+		
 - build the catkin workspace by running *catkin_make* in *$HBP/GazeboRosPackages*
 
 #### Create an experiment with a Baxter robot
@@ -31,6 +35,7 @@ This is a modified version of the baxter simulator by rethink robotics (http://s
 		roslaunch baxter_gazebo baxter_control.launch
 		
 - add a brain and Transfer Functions to the experiment
+- for **joint plot**  in NRP Frontend to be able to plot joint states the attribute **robotId** in the bibi and exc files of the experiment must be set to "robot"
 
 [1] [https://neurorobotics.net](https://neurorobotics.net) 
 [2] [https://www.humanbrainproject.eu](https://www.humanbrainproject.eu) 
