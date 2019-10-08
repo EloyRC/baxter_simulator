@@ -363,7 +363,7 @@
           <lower>-1.70168</lower>
           <upper>1.70168</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -435,7 +435,7 @@
           <lower>-2.147</lower>
           <upper>1.047</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -498,7 +498,7 @@
           <lower>-3.05418</lower>
           <upper>3.05418</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -570,7 +570,7 @@
           <lower>-0.05</lower>
           <upper>2.618</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -1247,7 +1247,7 @@
           <lower>-1.70168</lower>
           <upper>1.70168</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -1319,7 +1319,7 @@
           <lower>-2.147</lower>
           <upper>1.047</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -1382,7 +1382,7 @@
           <lower>-3.05418</lower>
           <upper>3.05418</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
@@ -1454,7 +1454,7 @@
           <lower>-0.05</lower>
           <upper>2.618</upper>
           <effort>50</effort>
-          <velocity>1.5</velocity>
+          <velocity>2.0</velocity>
         </limit>
         <dynamics>
           <damping>0.7</damping>
