@@ -76,7 +76,7 @@ const std::string BAXTER_RIGHT_GRAVITY_TOPIC = "robot/limb/right/gravity_compens
 
 const std::string BAXTER_SIM_STARTED = "robot/sim/started";
 
-const int IMG_LOAD_ON_STARTUP_DELAY = 10;  // Timeout for publishing a single RSDK image on start up
+const int IMG_LOAD_ON_STARTUP_DELAY = 1;  // Timeout for publishing a single RSDK image on start up
 
 enum nav_light_enum
 {
@@ -285,9 +285,9 @@ void baxter_emulator::startPublishLoop(const std::string& img_path)
     {
       cv_ptr->encoding = sensor_msgs::image_encodings::BGR8;
 
-      // Wait for the VideoPlugin screen to load, or timeout after delay
+      // Wait for the VideoPlugin screen to load, or timeout after delay.
       const std::size_t num_required_subscribers = 2;
-      waitForSubscriber(display_pub, IMG_LOAD_ON_STARTUP_DELAY, num_required_subscribers);
+      waitForSubscriber(display_pub, IMG_LOAD_ON_STARTUP_DELAY, num_required_subscribers); 
 
       display_pub.publish(cv_ptr->toImageMsg());
     }
