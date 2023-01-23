@@ -124,8 +124,7 @@ public:
   }
 
 std::string b_path = ros::package::getPath("baxter_gazebo");
-std::string x_path = ros::package::getPath("xacro");
-std::string x_command = "python "+x_path+"/xacro.py --inorder "+b_path+"/urdf/baxter.urdf.xacro gazebo:=true left_electric_gripper:=false right_electric_gripper:=false";
+std::string x_command = "xacro --inorder "+b_path+"/urdf/baxter.urdf.xacro gazebo:=true left_electric_gripper:=false right_electric_gripper:=false";
 std::string urdf_string = exec_cmd(x_command.c_str());
 
   ros::NodeHandle nh_ = ros::NodeHandle();

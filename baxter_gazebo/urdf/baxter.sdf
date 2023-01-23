@@ -35,7 +35,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/torso/base_link_collision.DAE</uri>
+            <uri>model://baxter_robot/meshes/torso/base_link_collision.dae</uri>
           </mesh>
         </geometry>
         <surface>
@@ -52,7 +52,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/base/pedestal_link_collision.DAE</uri>
+            <uri>model://baxter_robot/meshes/base/pedestal_link_collision.dae</uri>
           </mesh>
         </geometry>
       </collision>
@@ -93,7 +93,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/torso/base_link.DAE</uri>
+            <uri>model://baxter_robot/meshes/torso/base_link.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -108,7 +108,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/base/PEDESTAL.DAE</uri>
+            <uri>model://baxter_robot/meshes/base/PEDESTAL.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -217,7 +217,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/head/H0.DAE</uri>
+            <uri>model://baxter_robot/meshes/head/H0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -226,7 +226,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/head/H1.DAE</uri>
+            <uri>model://baxter_robot/meshes/head/H1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -349,7 +349,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_shoulder/S0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_shoulder/S0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -421,7 +421,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_shoulder/S1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_shoulder/S1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -484,7 +484,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_elbow/E0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_elbow/E0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -556,7 +556,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_elbow/E1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_elbow/E1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -619,7 +619,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_forearm/W0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_forearm/W0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -682,7 +682,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_forearm/W1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_forearm/W1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -763,7 +763,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/wrist/W2.DAE</uri>
+            <uri>model://baxter_robot/meshes/wrist/W2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -772,7 +772,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/electric_gripper_base.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/electric_gripper_base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -999,7 +999,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -1014,7 +1014,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/paddle_tip.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/paddle_tip.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -1146,7 +1146,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -1161,7 +1161,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/paddle_tip.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/paddle_tip.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -1233,7 +1233,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_shoulder/S0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_shoulder/S0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1305,7 +1305,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_shoulder/S1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_shoulder/S1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1368,7 +1368,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_elbow/E0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_elbow/E0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1440,7 +1440,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_elbow/E1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_elbow/E1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1503,7 +1503,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/upper_forearm/W0.DAE</uri>
+            <uri>model://baxter_robot/meshes/upper_forearm/W0.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1566,7 +1566,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/lower_forearm/W1.DAE</uri>
+            <uri>model://baxter_robot/meshes/lower_forearm/W1.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1647,7 +1647,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/wrist/W2.DAE</uri>
+            <uri>model://baxter_robot/meshes/wrist/W2.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1656,7 +1656,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/electric_gripper_base.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/electric_gripper_base.dae</uri>
           </mesh>
         </geometry>
       </visual>
@@ -1884,7 +1884,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -1899,7 +1899,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/half_round_tip.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/half_round_tip.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -2032,7 +2032,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/extended_narrow.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -2047,7 +2047,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://baxter_robot/meshes/electric_gripper/fingers/half_round_tip.DAE</uri>
+            <uri>model://baxter_robot/meshes/electric_gripper/fingers/half_round_tip.dae</uri>
           </mesh>
         </geometry>
         <material>

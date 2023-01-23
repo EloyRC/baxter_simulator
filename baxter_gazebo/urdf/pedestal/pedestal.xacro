@@ -6,7 +6,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://baxter_gazebo/meshes/base/PEDESTAL.DAE"/>
+        <mesh filename="package://baxter_gazebo/meshes/base/PEDESTAL.dae"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
@@ -15,7 +15,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://baxter_gazebo/meshes/base/pedestal_link_collision.DAE"/>
+        <mesh filename="package://baxter_gazebo/meshes/base/pedestal_link_collision.dae"/>
       </geometry>
     </collision>
     <inertial>
